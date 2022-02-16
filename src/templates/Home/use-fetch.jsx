@@ -4,8 +4,7 @@ const isObjectEqual = (objA, objB) => {
   return JSON.stringify(objA) === JSON.stringify(objB);
 };
 
-// eslint-disable-next-line no-unused-vars
-const useFetch = (url, options) => {
+export const useFetch = (url, options) => {
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
   const [shouldLoad, setShouldLoad] = useState(false);
